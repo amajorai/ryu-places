@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ryu.places",
+  "version": "0.1.0",
+  "description": "Save places you want to visit and places you've been on one shared map, import them from TikTok, Instagram, YouTube, blogs, or a Google Maps export, then plan trips day by day with AI drafts, optimized routes, bookings, split costs, and a checklist. Shared with the members of your organization. Records stay on your node. Search text, and the names and addresses of places you import or an AI draft proposes, go to a Photon geocoder (komoot's public photon.komoot.io unless your node sets RYU_PLACES_GEOCODER_URL), links you import are read from their public pages, and imported link and caption text, plus AI trip requests with the trip's stops and saved place names, goes to Ryu's configured model.",
+  "author": {
+    "name": "Ryu",
+    "url": "https://ryuhq.com"
+  },
+  "homepage": "https://github.com/amajorai/ryu-places",
+  "repository": "https://github.com/amajorai/ryu-places",
+  "keywords": [
+    "places",
+    "map",
+    "travel",
+    "trip planner",
+    "itinerary",
+    "want to go",
+    "been there"
+  ],
+  "extensions": {
+    "com.ryuhq.ryu": {
+      "id": "@ryu/places",
+      "displayName": "Places",
+      "mcp": {
+        "places": {
+          "description": "Places Guide tools for searching real places, importing them from shared links and captions, saving them to the one shared map that turned on agent access, and planning trips: AI-drafted days, day-by-day stops, route optimization, bookings, shared expenses with balances, and checklists."
+        }
+      }
+    }
+  }
+}
